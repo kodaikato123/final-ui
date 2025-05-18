@@ -1,0 +1,36 @@
+:root {
+  --bg-primary: #f5f0e6;
+  --bg-secondary: #fffbf3;
+  --text-primary: #3a3226;
+  --text-secondary: #7a6a56;
+  --accent: #8b5a2b;
+  --accent-hover: #6d4621;
+  --danger: #c45c41;
+  --danger-hover: #a94730;
+  --success: #6b8e6b;
+  --border: #d4c9b8;
+  --paper-line: #e8dfce;
+}
+
+body {
+  font-family: 'Crimson Pro', serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  background-image: linear-gradient(var(--paper-line) 1px, transparent 1px);
+  background-size: 100% 32px;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+  max-width: 640px;
+  margin: 0 auto;
+  width: 100%;
+}

@@ -1,0 +1,214 @@
+/* Notebook Form Styles */
+.post-form-notebook {
+  background: var(--bg-secondary);
+  border-radius: 2px;
+  padding: 28px;
+  margin-bottom: 32px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.underline {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.notebook-input, .notebook-textarea {
+  width: 95%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.notebook-textarea {
+  min-height: 150px;
+  resize: vertical;
+  line-height: 1.8;
+}
+
+.notebook-button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+
+.notebook-button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.notebook-button:disabled {
+  background: var(--border);
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Sticky Note Post */
+.post-note {
+  background: var(--bg-secondary);
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.post-note::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: var(--bg-primary) var(--accent);
+  box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.note-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.author-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.note-date {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.note-content {
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.note-content p {
+  margin-bottom: 16px;
+}
+
+.note-image {
+  margin-top: 16px;
+}
+
+.note-image img {
+  width: 100%;
+  border-radius: 2px;
+  max-height: 400px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.note-footer {
+  display: flex;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border);
+}
+
+.note-action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: all 0.2s;
+}
+
+.note-action:hover {
+  color: var(--accent);
+}
+
+.note-action.danger:hover {
+  color: var(--danger);
+}
+
+.note-action svg {
+  font-size: 0.9rem;
+}
+
+/* Edit Mode */
+.edit-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edit-textarea, .edit-input {
+  width: 95%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.edit-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.note-action.cancel {
+  color: var(--text-secondary);
+}
+
+.note-action.save {
+  color: var(--success);
+}
