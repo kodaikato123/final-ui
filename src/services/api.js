@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080'; // Update with your Spring Boot backend URL
+const API_BASE_URL = 'https://final-api-xe9w.onrender.com'; // Update with your Spring Boot backend URL
 
 export const getPosts = async () => {
   try {
