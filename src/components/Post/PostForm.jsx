@@ -53,7 +53,7 @@ const PostForm = ({ onPostCreated }) => {
           />
         </div>
         <div className="form-field">
-          <label>Image URL (optional)</label>
+          <label>Image URL</label>
           <input
             type="text"
             placeholder="Paste image link..."
